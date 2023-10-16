@@ -34,7 +34,9 @@ android {
 }
 
 dependencies {
-    implementation(files("libs/oppwa.mobile-5.6.0-release.aar"))
+//    implementation(files("libs/oppwa.mobile-5.6.0-release.aar"))
+    implementation project(":hyperpay-mobile")
+
 }
 afterEvaluate {
     publishing {

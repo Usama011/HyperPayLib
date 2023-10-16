@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "HyperPayLib"
 include(":app")
 include(":app:hyperpay")
+include(":hyperpay-mobile")
