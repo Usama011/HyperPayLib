@@ -40,8 +40,19 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.android'
                 artifactId = 'hyperpay'
-                version = '1.0.2'
+                version = '1.0.3'
+                artifact bundleReleaseAar
             }
         }
     }
 }
+//publishing {
+//    publications {
+//        mavenJava(MavenPublication) {
+//            groupId = 'com.android.hyperpay'
+//            artifactId = 'library'
+//            version = '1.0.3'
+//            artifact bundleReleaseAar
+//        }
+//    }
+//}
