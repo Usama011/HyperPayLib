@@ -40,7 +40,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.android'
                 artifactId = 'hyperpay'
-                version = '1.0.1'
+                version = '1.0.2'
             }
         }
     }
