@@ -46,7 +46,9 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 //    implementation(project(mapOf("path" to ":app:hyperpay")))
-    implementation(files("libs/oppwa.mobile-5.6.0-release.aar"))
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+
+//    implementation(files("libs/oppwa.mobile-5.6.0-release.aar"))
 
 }
 publishing {
