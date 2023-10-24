@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="70dp"
+            android:height="40dp"
+            android:viewportWidth="70.0"
+            android:viewportHeight="40.0">
+
+            <path
+                android:name="button"
+                android:strokeWidth="1"
+                android:strokeColor="#248DFF"
+                android:fillColor="#248DFF"
+                android:pathData="M5,10 C5,10 5,5 10,5 L10,5 60,5 C60,5 65,5 65,10 L65,10 65,30 C65,30 65,35 60,35 L60,35 10,35 C10,35 5,35 5,30 z"/>
+
+        </vector>
+    </aapt:attr>
+    <target android:name="button">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="1500"
+                    android:propertyName="strokeWidth"
+                    android:valueFrom="1.0"
+                    android:valueTo="10.0"
+                    android:valueType="floatType"
+                    android:repeatMode="restart"
+                    android:repeatCount="infinite"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="strokeAlpha"
+                    android:duration="1500"
+                    android:valueFrom="0.8"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:repeatMode="restart"
+                    android:repeatCount="infinite"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

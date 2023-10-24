@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("maven-publish")
 }
 
 android {
@@ -45,4 +46,18 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 //    implementation(project(mapOf("path" to ":app:hyperpay")))
+    implementation(files("libs/oppwa.mobile-5.6.0-release.aar"))
+
+}
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.android"
+            artifactId = "hyperpaylib"
+            version = "1.0.1"
+//            afterEvaluate {
+//                from(components["release"])
+//            }
+        }
+    }
 }
